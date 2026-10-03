@@ -1,0 +1,4 @@
+codigo|codigo_libro|carne|nombre|fecha_prestamo|fecha_devolucion_prevista|fecha_devolucion_real|estado
+P0001|LIB-001|0900-23-10452|Ana López|2026-09-10|2026-09-20||Activo
+P0002|LIB-003|0900-22-08811|Carlos Méndez|2026-09-28|2026-10-12||Activo
+P0003|LIB-002|0900-24-03390|María Pérez|2026-09-01|2026-09-08|2026-09-07|Devuelto

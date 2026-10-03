@@ -1,0 +1,70 @@
+/* ==========================================================
+   estilos.css — Tema blanco y morado
+   Casi todo el diseño se hace con clases de Bootstrap 5.
+   Este archivo solo contiene lo que Bootstrap no trae:
+   1) el color morado como color principal (Bootstrap usa azul),
+   2) la tipografía, y
+   3) dos detalles visuales sin equivalente en Bootstrap.
+   ========================================================== */
+
+/* 1) Tema: se cambian las variables de Bootstrap a morado.
+      Así clases como text-primary, bg-primary-subtle o link-primary se ven moradas. */
+:root {
+    --bs-primary: #7c3aed;
+    --bs-primary-rgb: 124, 58, 237;
+    --bs-primary-bg-subtle: #f3effe;
+    --bs-primary-border-subtle: #e4dafc;
+    --bs-primary-text-emphasis: #6d28d9;
+    --bs-link-color: #7c3aed;
+    --bs-link-color-rgb: 124, 58, 237;
+    --bs-link-hover-color: #6d28d9;
+    --bs-link-hover-color-rgb: 109, 40, 217;
+    --bs-body-bg: #fcfbff;
+    --bs-border-radius: .75rem;
+    /* 2) Tipografía */
+    --bs-body-font-family: 'Inter', system-ui, 'Segoe UI', sans-serif;
+}
+
+/* Los botones de Bootstrap traen el azul fijo, por eso se redefinen sus variables */
+.btn-primary {
+    --bs-btn-bg: #7c3aed;
+    --bs-btn-border-color: #7c3aed;
+    --bs-btn-hover-bg: #6d28d9;
+    --bs-btn-hover-border-color: #6d28d9;
+    --bs-btn-active-bg: #6d28d9;
+    --bs-btn-active-border-color: #6d28d9;
+}
+.btn-outline-primary {
+    --bs-btn-color: #7c3aed;
+    --bs-btn-border-color: #e4dafc;
+    --bs-btn-hover-bg: #f3effe;
+    --bs-btn-hover-color: #6d28d9;
+    --bs-btn-hover-border-color: #7c3aed;
+    --bs-btn-active-bg: #f3effe;
+    --bs-btn-active-color: #6d28d9;
+}
+
+/* Menú y pestañas: opción activa en morado suave */
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #f3effe;
+    --bs-nav-pills-link-active-color: #6d28d9;
+}
+
+/* Borde morado al escribir en un campo (Bootstrap lo trae azul fijo) */
+.form-control:focus,
+.form-select:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 .2rem rgba(124, 58, 237, .15);
+}
+
+/* 3a) Cuadro cuadrado para los íconos (Bootstrap no tiene tamaños fijos) */
+.icono {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+/* 3b) Asterisco morado en los campos obligatorios */
+.requerido::after {
+    content: " *";
+    color: #7c3aed;
+}
